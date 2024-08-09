@@ -11,3 +11,14 @@ const nav = document.getElementById("navbar");
   close.addEventListener("click", () => {
     nav.classList.remove("active");
   });
+
+
+  var MainImg = document.getElementById("MainImg"); 
+  var smallimg = document.querySelectorAll(".small-img");
+  
+  smallimg.forEach(function(img) {
+    img.onclick = function() {
+      MainImg.src = img.src;
+    }
+  });
+  
